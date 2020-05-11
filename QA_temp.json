@@ -1,0 +1,870 @@
+[
+    {
+        "Problem": "the banker ' s gain of a certain sum due ${n0} years hence at ${n1} % per annum is rs . ${n2} . what is the present worth ?",
+        "Solution": "divide(multiply(100, divide(multiply(${n2}, 100), multiply(${n0}, ${n1}))), multiply(${n0}, ${n1}))"
+    },
+    {
+        "Problem": "average age of students of an adult school is ${n0} years . ${n1} new students whose average age is ${n2} years joined the school . as a result the average age is decreased by ${n3} years . find the number of students of the school after joining of the new students .",
+        "Solution": "multiply(divide(subtract(multiply(add(${n2}, ${n3}), ${n1}), multiply(${n1}, ${n2})), subtract(${n0}, add(${n2}, ${n3}))), ${n3})"
+    },
+    {
+        "Problem": "sophia finished ${n0} / ${n1} of a book . she calculated that she finished ${n2} more pages than she has yet to read . how long is her book ?",
+        "Solution": "divide(${n2}, subtract(1, divide(${n0}, ${n1})))"
+    },
+    {
+        "Problem": "${n0} is what percent of ${n1} ?",
+        "Solution": "multiply(divide(${n0}, ${n1}), 100)"
+    },
+    {
+        "Problem": "there are ${n0} girls and ${n1} boys in a classroom . what is the ratio of girls to boys ?",
+        "Solution": "divide(${n0}, ${n1})"
+    },
+    {
+        "Problem": "an empty fuel tank with a capacity of ${n0} gallons was filled partially with fuel a and then to capacity with fuel b . fuel a contains ${n1} % ethanol by volume and fuel b contains ${n2} % ethanol by volume . if the full fuel tank contains ${n3} gallons of ethanol , how many gallons of fuel a were added ?",
+        "Solution": "divide(subtract(multiply(${n0}, divide(${n2}, 100)), ${n3}), subtract(divide(${n2}, 100), divide(${n1}, 100)))"
+    },
+    {
+        "Problem": "an article is bought for rs . ${n0} and sold for rs . ${n1} , find the gain percent ?",
+        "Solution": "subtract(100, divide(multiply(${n1}, 100), ${n0}))"
+    },
+    {
+        "Problem": "${n0} workers should finish a job in ${n1} days . after ${n2} days came ${n3} workers join them . how many days m do they need to finish the same job ?",
+        "Solution": "divide(subtract(multiply(${n0}, ${n1}), multiply(${n2}, ${n0})), add(${n0}, ${n3}))"
+    },
+    {
+        "Problem": "j is ${n0} % less than p and ${n1} % less than t . t is q % less than p . what is the value of q ?",
+        "Solution": "divide(multiply(${n0}, ${n0}), 100)"
+    },
+    {
+        "Problem": "a student was asked to find ${n0} / ${n1} of a number . but the student divided the number by ${n0} / ${n1} , thus the student got ${n2} more than the correct answer . find the number .",
+        "Solution": "divide(divide(multiply(multiply(${n2}, divide(${n0}, ${n1})), divide(${n0}, ${n1})), subtract(1, multiply(divide(${n0}, ${n1}), divide(${n0}, ${n1})))), divide(${n0}, ${n1}))"
+    },
+    {
+        "Problem": "the average weight of ${n0} person ' s increases by ${n1} kg when a new person comes in place of one of them weighing ${n2} kg . what might be the weight of the new person ?",
+        "Solution": "add(multiply(${n0}, ${n1}), ${n2})"
+    },
+    {
+        "Problem": "a train ${n0} m long passes a man , running at ${n1} km / hr in the same direction in which the train is going , in ${n2} seconds . the speed of the train is ?",
+        "Solution": "divide(divide(subtract(${n0}, multiply(multiply(${n1}, const_0_2778), ${n1})), ${n1}), const_0_2778)"
+    },
+    {
+        "Problem": "the average of ${n0} result is ${n1} . average of the first ${n2} of them is ${n2} and that of the last ${n2} is ${n3} . find the ${n4} th result ?",
+        "Solution": "subtract(add(multiply(${n2}, ${n2}), multiply(${n2}, ${n3})), multiply(${n0}, ${n1}))"
+    },
+    {
+        "Problem": "a salesman \u00e2 \u20ac \u2122 s terms were changed from a flat commission of ${n0} % on all his sales to a fixed salary of rs . ${n1} plus 2.${n0} % commission on all sales exceeding rs . ${n3},${n4} . if his remuneration as per new scheme was rs . ${n5} more than that by the previous schema , his sales were worth ?",
+        "Solution": "subtract(multiply(${n0}, 4), 12)"
+    },
+    {
+        "Problem": "a rectangular floor that measures ${n0} meters by ${n1} meters is to be covered with carpet squares that each measure ${n2} meters by ${n2} meters . if the carpet squares cost $ ${n3} apiece , what is the total cost for the number of carpet squares needed to cover the floor ?",
+        "Solution": "multiply(${n0}, ${n0})"
+    },
+    {
+        "Problem": "a vessel of capacity ${n0} litre has ${n1} % of alcohol and another vessel of capacity ${n2} litre had ${n3} % alcohol . the total liquid of ${n4} litre was poured out in a vessel of capacity ${n5} litre and thus the rest part of the vessel was filled with the water . what is the new concentration of mixture ?",
+        "Solution": "multiply(divide(add(multiply(divide(${n1}, 100), ${n0}), multiply(divide(${n3}, 100), ${n2})), ${n5}), 100)"
+    },
+    {
+        "Problem": "the total of ${n0} of ${n1} paise and ${n2} paise make a sum of rs . ${n3} . the no of ${n1} paise coins is",
+        "Solution": "divide(subtract(multiply(${n0}, ${n2}), multiply(${n3}, 100)), subtract(${n2}, ${n1}))"
+    },
+    {
+        "Problem": "in ${n0} there were ${n1},${n2} women stockbrokers in the united states . by ${n3} the number had increased to ${n4},${n5} . approximately what was the percent increase ?",
+        "Solution": "divide(subtract(${n4},${n5}, ${n1},${n2}), ${n1},${n2})"
+    },
+    {
+        "Problem": "what is the number of integers from ${n0} to ${n1} ( inclusive ) that are divisible by neither ${n2} nor by ${n3} ?",
+        "Solution": "subtract(${n1}, subtract(add(divide(${n1}, ${n2}), divide(${n1}, ${n3})), divide(${n1}, multiply(${n2}, ${n3}))))"
+    },
+    {
+        "Problem": "arun makes a popular brand of ice cream in a rectangular shaped bar ${n0} cm long , ${n1} cm wide and ${n2} cm thick . to cut costs , the company had decided to reduce the volume of the bar by ${n3} % . the thickness will remain same , but the length and width will be decreased by some percentage . the new width will be ,",
+        "Solution": "add(divide(multiply(multiply(${n0}, ${n1}), ${n2}), ${n2}), 3)"
+    },
+    {
+        "Problem": "kim finds a ${n0} - meter tree branch and marks it off in thirds and fifths . she then breaks the branch along all the markings and removes one piece of every distinct length . what fraction of the original branch remains ?",
+        "Solution": "subtract(1, add(add(divide(${n0}, multiply(add(2, ${n0}), ${n0})), divide(2, multiply(add(2, ${n0}), ${n0}))), divide(1, multiply(add(2, ${n0}), ${n0}))))"
+    },
+    {
+        "Problem": "mark bought a set of ${n0} flower pots of different sizes at a total cost of $ ${n1} . each pot cost ${n2} more than the next one below it in size . what was the cost , in dollars , of the largest pot ?",
+        "Solution": "add(divide(subtract(${n1}, multiply(divide(multiply(subtract(${n0}, 1), ${n0}), 2), ${n2})), ${n0}), multiply(subtract(${n0}, 1), ${n2}))"
+    },
+    {
+        "Problem": "in the above number , a and b represent the tens and units digits , respectively . if the above number is divisible by ${n0} , what is the greatest possible value of b x a ?",
+        "Solution": "multiply(add(3, 4), add(2, 3))"
+    },
+    {
+        "Problem": "the profit obtained by selling an article for rs . ${n0} is the same as the loss obtained by selling it for rs . ${n1} . what is the cost price of the article ?",
+        "Solution": "divide(add(${n0}, ${n1}), 2)"
+    },
+    {
+        "Problem": "in ${n0} , the profits of company n were ${n1} percent of revenues . in ${n2} , the revenues of company n fell by ${n3} percent , but profits were ${n4} percent of revenues . the profits in ${n2} were what percent of the profits in ${n0} ?",
+        "Solution": "multiply(divide(multiply(${n4}, subtract(1, divide(${n3}, 100))), ${n1}), 100)"
+    },
+    {
+        "Problem": "a garrison of ${n0} men has provisions for ${n1} days . at the end of ${n2} days , a reinforcement arrives , and it is now found that the provisions will last only for ${n3} days more . what is the reinforcement ?",
+        "Solution": "subtract(divide(subtract(multiply(${n0}, ${n1}), multiply(${n0}, ${n2})), ${n3}), ${n0})"
+    },
+    {
+        "Problem": "if a bicyclist in motion increases his speed by ${n0} percent and then increases this speed by ${n1} percent , what percent of the original speed is the total increase in speed ?",
+        "Solution": "subtract(add(add(100, ${n0}), multiply(add(100, ${n0}), divide(${n1}, 100))), 100)"
+    },
+    {
+        "Problem": "what is the greatest number that divides ${n0} , ${n1} and ${n2} leaving a remainder of ${n3} in each case ?",
+        "Solution": "divide(divide(subtract(subtract(subtract(${n2}, ${n3}), subtract(${n1}, ${n3})), subtract(${n0}, ${n3})), 3), 2)"
+    },
+    {
+        "Problem": "how many seconds will a ${n0} meter long train moving with a speed of ${n1} km / hr take to cross a man walking with a speed of ${n2} km / hr in the direction of the train ?",
+        "Solution": "divide(${n0}, multiply(subtract(${n1}, ${n2}), const_0_2778))"
+    },
+    {
+        "Problem": "find the average of all the numbers between ${n0} and ${n1} which are divisible by ${n2} .",
+        "Solution": "divide(add(add(${n0}, 4), subtract(${n1}, 4)), 2)"
+    },
+    {
+        "Problem": "if the cost price is ${n0} % of sp then what is the profit %",
+        "Solution": "multiply(divide(subtract(100, ${n0}), ${n0}), 100)"
+    },
+    {
+        "Problem": "a car gets ${n0} miles to the gallon . if it is modified to use a solar panel , it will use only ${n1} percent as much fuel as it does now . if the fuel tank holds ${n2} gallons , how many more miles will the car be able to travel , per full tank of fuel , after it has been modified ?",
+        "Solution": "subtract(multiply(multiply(divide(${n0}, ${n1}), 100), ${n2}), multiply(${n0}, ${n2}))"
+    },
+    {
+        "Problem": "a fort had provision of food for ${n0} men for ${n1} days . after ${n2} days , ${n3} men left the fort . the number of days for which the remaining food will last , is :",
+        "Solution": "divide(multiply(${n0}, add(${n3}, ${n2})), subtract(${n0}, ${n3}))"
+    },
+    {
+        "Problem": "a person lent a certain sum of money at ${n0} % per annum at simple interest and in ${n1} years the interest amounted to rs . ${n2} less than the sum lent . what was the sum lent ?",
+        "Solution": "divide(${n2}, subtract(1, divide(multiply(${n0}, ${n1}), 100)))"
+    },
+    {
+        "Problem": "a man has some hens and cows . if the number of heads be ${n0} and the number of feet equals ${n1} , then the number of hens will be",
+        "Solution": "divide(subtract(multiply(${n0}, 4), ${n1}), 2)"
+    },
+    {
+        "Problem": "because he \u2019 s taxed by his home planet , mork pays a tax rate of ${n0} % on his income , while mindy pays a rate of only ${n1} % on hers . if mindy earned ${n2} times as much as mork did , what was their combined tax rate ?",
+        "Solution": "multiply(100, divide(add(divide(${n0}, 100), multiply(${n2}, divide(${n1}, 100))), add(1, ${n2})))"
+    },
+    {
+        "Problem": "a watch was sold at a loss of ${n0} % . if it was sold for rs . ${n1} more , there would have been a gain of ${n0} % . what is the cost price ?",
+        "Solution": "divide(multiply(${n1}, 100), subtract(add(100, ${n0}), subtract(100, ${n0})))"
+    },
+    {
+        "Problem": "a car travels at a speed of ${n0} miles per hour . how far will it travel in ${n1} hours ?",
+        "Solution": "multiply(${n0}, ${n1})"
+    },
+    {
+        "Problem": "in a family ${n0} people eat only vegetarian , ${n1} people eat only non veg . , ${n2} people eat both veg and non veg . . how many people eat veg in the family ?",
+        "Solution": "add(${n0}, ${n2})"
+    },
+    {
+        "Problem": "if p / q = ${n0} / ${n1} , then the value of ${n2} / ${n3} + { ( ${n4} q - p ) / ( ${n4} q + p ) } is ?",
+        "Solution": "add(divide(${n2}, ${n3}), divide(subtract(${n4}, divide(${n0}, ${n1})), add(${n4}, divide(${n0}, ${n1}))))"
+    },
+    {
+        "Problem": "if x ^ ${n0} + y ^ ${n0} = ${n1} and xy = ${n2} , then ( x \u2212 y ) ^ ${n0} =",
+        "Solution": "power(${n2}, ${n0})"
+    },
+    {
+        "Problem": "a big container is ${n0} % full with water . if ${n1} liters of water is added , the container becomes ${n2} / ${n3} full . what is the capacity of the big container in liters ?",
+        "Solution": "divide(${n1}, subtract(divide(${n2}, ${n3}), divide(${n0}, 100)))"
+    },
+    {
+        "Problem": "the ratio of the arithmetic mean of two numbers to one of the numbers is ${n0} : ${n1} . what is the ratio of the smaller number to the larger number ?",
+        "Solution": "multiply(subtract(divide(${n0}, ${n1}), divide(1, 2)), 2)"
+    },
+    {
+        "Problem": "the salaries of a , b , and c are in the ratio of ${n0} : ${n1} : ${n2} . the salary of b and c together is rs . ${n3} . by what percent is the salary of c more than that of a ?",
+        "Solution": "multiply(subtract(divide(multiply(${n2}, divide(${n3}, add(${n1}, ${n2}))), divide(${n3}, add(${n1}, ${n2}))), 1), 100)"
+    },
+    {
+        "Problem": "a man swims downstream ${n0} km and upstream ${n1} km taking ${n2} hours each time ; what is the speed of the current ?",
+        "Solution": "divide(add(divide(${n1}, ${n2}), divide(${n0}, ${n2})), 2)"
+    },
+    {
+        "Problem": "vinoth can complete a painting work in ${n0} days . prakash can do the same work in ${n1} days . they start the work together but vinoth quit after ${n2} days of work . how many days are required to complete the remaining painting work by prakash .",
+        "Solution": "divide(subtract(1, multiply(${n2}, divide(1, ${n1}))), divide(1, ${n0}))"
+    },
+    {
+        "Problem": "the total cost of a vacation was divided among ${n0} people . if the total cost of the vacation had been divided equally among ${n1} people , the cost per person would have been $ ${n2} less . what was the total cost cost of the vacation ?",
+        "Solution": "multiply(multiply(${n1}, ${n0}), divide(${n2}, subtract(${n1}, ${n0})))"
+    },
+    {
+        "Problem": "how many ounces of a ${n0} % salt solution must be added to ${n1} ounces of a ${n2} percent salt solution so that the resulting mixture is ${n3} % salt ?",
+        "Solution": "divide(subtract(multiply(divide(${n3}, 100), ${n1}), multiply(divide(${n2}, 100), ${n1})), subtract(divide(${n3}, 100), divide(${n2}, 100)))"
+    },
+    {
+        "Problem": "if ${n0} % of a is the same as ${n1} % of b , then a : b is :",
+        "Solution": "divide(divide(${n1}, 100), divide(${n0}, 100))"
+    },
+    {
+        "Problem": "d and e are two points respectively on sides ab and ac of triangle abc such that de is parallel to bc . if the ratio of area of triangle ade to that of the trapezium decb is ${n0} : ${n1} and bc = ${n2} cm , then find the length of de .",
+        "Solution": "multiply(sqrt(divide(${n1}, add(${n1}, ${n0}))), ${n2})"
+    },
+    {
+        "Problem": "working alone at its constant rate , machine a produces x boxes in ${n0} minutes and working alone at its constant rate , machine b produces ${n1} x boxes in ${n2} minutes . how many minutes does it take machines a and b , working simultaneously at their respective constant rates , to produce ${n0} x boxes ?",
+        "Solution": "divide(multiply(${n0}, ${n0}), add(speed(${n0}, ${n0}), speed(multiply(${n1}, ${n0}), ${n2})))"
+    },
+    {
+        "Problem": "if y > ${n0} , ( ${n1} y ) / ${n2} + ( ${n3} y ) / ${n4} is what percent of y ?",
+        "Solution": "multiply(100, add(divide(${n1}, ${n2}), divide(${n3}, ${n4})))"
+    },
+    {
+        "Problem": "how many of the positive factors of ${n0} , ${n1} and how many common factors are there in numbers ?",
+        "Solution": "divide(${n1}, ${n0})"
+    },
+    {
+        "Problem": "a certain college ' s enrollment at the beginning of ${n0} was ${n1} percent greater than it was at the beginning of ${n2} , and its enrollment at the beginning of ${n3} was ${n4} percent greater than it was at the beginning of ${n0} . the college ' s enrollment at the beginning of ${n3} was what percent greater than its enrollment at the beginning of ${n2} ?",
+        "Solution": "subtract(multiply(add(100, ${n1}), divide(add(100, ${n4}), 100)), 100)"
+    },
+    {
+        "Problem": "of the ${n0},${n1} employees of the anvil factory , ${n2} / ${n3} are journeymen . if half of the journeymen were laid off , what percentage of the total remaining employees would be journeymen ?",
+        "Solution": "multiply(multiply(divide(divide(divide(${n2}, ${n3}), ${n2}), add(divide(divide(${n2}, ${n3}), ${n2}), subtract(1, divide(${n2}, ${n3})))), 100), 3)"
+    },
+    {
+        "Problem": "an electric pump can fill a tank in ${n0} hours . because of a leak in the tank , it took ${n1} hours to fill the tank . if the tank is full , how much time will the leak take to empty it ?",
+        "Solution": "divide(${n1}, 1)"
+    },
+    {
+        "Problem": "for every even positive integer m , f ( m ) represents the product of all even integers from ${n0} to m , inclusive . for example , f ( ${n1} ) = ${n0} x ${n2} x ${n3} x ${n4} x ${n5} x ${n1} . what is the greatest prime factor of f ( ${n6} ) ?",
+        "Solution": "subtract(divide(${n6}, ${n0}), 1)"
+    },
+    {
+        "Problem": "pipe a can fill a tank in ${n0} hours . due to a leak at the bottom , it takes ${n1} hours for the pipe a to fill the tank . in what time can the leak alone empty the full tank ?",
+        "Solution": "divide(multiply(${n1}, ${n0}), subtract(${n1}, ${n0}))"
+    },
+    {
+        "Problem": "${n0} women can do a work in two days . ${n1} men can complete the same work in five days . what is the ratio between the capacity of a man and a woman ?",
+        "Solution": "divide(divide(1, multiply(${n0}, ${n1})), divide(1, multiply(${n1}, 10)))"
+    },
+    {
+        "Problem": "what is the positive difference between the sum of the squares of the first ${n0} positive integers and the sum of the prime numbers between the first square and fourth square ?",
+        "Solution": "subtract(add(add(add(add(add(1, power(2, 2)), power(3, 2)), power(4, 2)), power(add(4, 1), 2)), power(${n0}, 2)), add(add(add(4, 3), ${n0}), add(add(add(add(2, 3), add(4, 1)), add(4, 3)), add(add(2, 3), ${n0}))))"
+    },
+    {
+        "Problem": "the average age of ${n0} persons in a office is ${n1} years . out of these , the average age of ${n2} of them is ${n3} years and that of the other ${n4} persons is ${n5} years . the age of the ${n1} th person is ?",
+        "Solution": "subtract(subtract(multiply(${n0}, ${n1}), multiply(${n2}, ${n3})), multiply(${n4}, ${n5}))"
+    },
+    {
+        "Problem": "a pet store regularly sells pet food at a discount of ${n0} percent to ${n1} percent from the manufacturer \u2019 s suggested retail price . if during a sale , the store discounts an additional ${n2} percent from the discount price , what would be the lowest possible price of a container of pet food that had a manufacturer \u2019 s suggested retail price o f $ ${n3} ?",
+        "Solution": "multiply(divide(subtract(100, ${n2}), 100), multiply(divide(subtract(100, ${n1}), 100), ${n3}))"
+    },
+    {
+        "Problem": "the perimeter of an equilateral triangle is ${n0} . if one of the sides of the equilateral triangle is the side of an isosceles triangle of perimeter ${n1} , then how long is the base of isosceles triangle ?",
+        "Solution": "subtract(subtract(${n1}, divide(${n0}, 3)), divide(${n0}, 3))"
+    },
+    {
+        "Problem": "a small table has a length of ${n0} inches and a breadth of b inches . cubes are placed on the surface of the table so as to cover the entire surface . the maximum side of such cubes is found to be ${n1} inches . also , a few such tables are arranged to form a square . the minimum length of side possible for such a square is ${n2} inches . find b .",
+        "Solution": "sqrt(subtract(power(divide(${n2}, ${n1}), 2), power(${n0}, 2)))"
+    },
+    {
+        "Problem": "calculate the ratio between x and y if ${n0} % of x equal to ${n1} % of y ?",
+        "Solution": "divide(${n0}, ${n1})"
+    },
+    {
+        "Problem": ". ${n0} / ? = . ${n1}",
+        "Solution": "divide(divide(${n0}, 1000), divide(${n1}, 100))"
+    },
+    {
+        "Problem": "if \u221a ${n0} = ${n1} , find the value of if \u221a ${n2} / ${n3}",
+        "Solution": "sqrt(divide(${n2}, ${n3}))"
+    },
+    {
+        "Problem": "the length of a rectangular plot is ${n0} metres more than its breadth . if the cost of fencing the plot @ rs . ${n1} per metre is rs . ${n2} , what is the length of the plot in metres ?",
+        "Solution": "subtract(divide(divide(${n2}, ${n1}), 2), multiply(2, ${n0}))"
+    },
+    {
+        "Problem": "${n0} men can do a work in ${n1} days . when should ${n2} men leave the work so that the entire work is completed in ${n1} days after they leave the work ?",
+        "Solution": "divide(subtract(multiply(${n0}, ${n1}), multiply(${n1}, ${n2})), ${n1})"
+    },
+    {
+        "Problem": "carrie likes to buy t - shirts at the local clothing store . they cost $ ${n0} each . one day , she bought ${n1} t - shirts . how much money did she spend ?",
+        "Solution": "floor(multiply(${n1}, ${n0}))"
+    },
+    {
+        "Problem": "a train ${n0} m long is running with a speed of ${n1} km / h . in how many seconds will the train pass a man who is running at ${n2} km / h in the direction opposite to that in which the train is going ?",
+        "Solution": "divide(${n0}, divide(add(${n1}, ${n2}), const_3_6))"
+    },
+    {
+        "Problem": "kanul spent $ ${n0} in buying raw materials , $ ${n1} in buying machinery and ${n2} % of the total amount he had as cash with him . what was the total amount ?",
+        "Solution": "divide(add(${n0}, ${n1}), subtract(1, divide(${n2}, 100)))"
+    },
+    {
+        "Problem": "a sporting goods store sold ${n0} frisbees in one week , some for $ ${n1} and the rest for $ ${n2} each . if receipts from frisbee sales for the week totaled $ ${n3} , what is the fewest number of $ ${n1} frisbees that could have been sold ?",
+        "Solution": "subtract(${n3}, multiply(${n0}, ${n1}))"
+    },
+    {
+        "Problem": "two trains ${n0} meters and ${n1} meters in length respectively are running in opposite directions , one at the rate of ${n2} km and the other at the rate of ${n3} kmph . in what time will they be completely clear of each other from the moment they meet ?",
+        "Solution": "divide(add(${n0}, ${n1}), multiply(add(${n2}, ${n3}), const_0_2778))"
+    },
+    {
+        "Problem": "how many ${n0} / ${n1} s are there in ${n2} ${n0} / ${n3} ?",
+        "Solution": "divide(add(${n2}, divide(${n0}, ${n3})), divide(${n0}, ${n1}))"
+    },
+    {
+        "Problem": "a circle graph shows how the megatech corporation allocates its research and development budget : ${n0} % microphotonics ; ${n1} % home electronics ; ${n2} % food additives ; ${n3} % genetically modified microorganisms ; ${n4} % industrial lubricants ; and the remainder for basic astrophysics . if the arc of each sector of the graph is proportional to the percentage of the budget it represents , how many degrees of the circle are used to represent basic astrophysics research ?",
+        "Solution": "divide(multiply(subtract(100, add(add(add(add(${n0}, ${n1}), ${n2}), ${n3}), ${n4})), divide(3600, 10)), 100)"
+    },
+    {
+        "Problem": "how much interest will $ ${n0},${n1} earn in ${n2} months at an annual rate of ${n3} % ?",
+        "Solution": "multiply(multiply(power(100, 2), divide(${n3}, 100)), divide(3, 4))"
+    },
+    {
+        "Problem": "how many different values of positive integer x , for which | x + ${n0} | < x , are there ?",
+        "Solution": "add(${n0}, ${n0})"
+    },
+    {
+        "Problem": "if the average of ${n0} consecutive integers is ${n1} then the ${n0} th integer is : -",
+        "Solution": "add(multiply(${n0}, 2), multiply(subtract(${n1}, multiply(${n0}, 2)), ${n0}))"
+    },
+    {
+        "Problem": "in a box of ${n0} pens , a total of ${n1} are defective . if a customer buys ${n2} pens selected at random from the box , what is the probability that neither pen will be defective ?",
+        "Solution": "multiply(divide(subtract(${n0}, ${n1}), ${n0}), divide(subtract(subtract(${n0}, ${n1}), 1), subtract(${n0}, 1)))"
+    },
+    {
+        "Problem": "in filling a room with gas ${n0} m * ${n1} m * ${n1} m the volumes of gas will be ?",
+        "Solution": "volume_rectangular_prism(${n0}, ${n1}, ${n1})"
+    },
+    {
+        "Problem": "a train passes a station platform in ${n0} sec and a man standing on the platform in ${n1} sec . if the speed of the train is ${n2} km / hr . what is the length of the platform ?",
+        "Solution": "multiply(${n1}, multiply(${n2}, const_0_2778))"
+    },
+    {
+        "Problem": "a right triangle is inscribed in a circle . the legs of the triangle have lengths ${n0} and ${n1} . what is the diameter of the circle ?",
+        "Solution": "sqrt(add(power(${n0}, 2), power(${n1}, 2)))"
+    },
+    {
+        "Problem": "what is ${n0} percent of ${n1} ?",
+        "Solution": "divide(multiply(${n0}, add(add(multiply(multiply(add(3, 2), 2), multiply(multiply(3, 4), 100)), multiply(multiply(add(3, 4), add(3, 2)), multiply(add(3, 2), 2))), add(3, 3))), 100)"
+    },
+    {
+        "Problem": "each week a restaurant serving mexican food uses the same volume of chili paste , which comes in either ${n0} - ounce cans or ${n1} - ounce cans of chili paste . if the restaurant must order ${n2} more of the smaller cans than the larger cans to fulfill its weekly needs , then how many larger cans are required to fulfill its weekly needs ?",
+        "Solution": "add(${n1}, ${n2})"
+    },
+    {
+        "Problem": "for any positive integer n , the sum of the first n positive integers equals n ( n + ${n0} ) / ${n1} . what is the sum of all the even integers between ${n2} and ${n3} ?",
+        "Solution": "add(divide(subtract(subtract(${n3}, ${n0}), add(${n2}, ${n0})), ${n1}), ${n0})"
+    },
+    {
+        "Problem": "a salesman \u00e2 \u20ac \u2122 s terms were changed from a flat commission of ${n0} % on all his sales to a fixed salary of rs . ${n1} plus 2.${n0} % commission on all sales exceeding rs . ${n3},${n4} . if his remuneration as per new scheme was rs . ${n5} more than that by the previous schema , his sales were worth ?",
+        "Solution": "subtract(multiply(${n0}, 4), 12)"
+    },
+    {
+        "Problem": "if k is an integer and ${n0} x ${n1} ^ k is greater than ${n1} , what is the least possible value of k ?",
+        "Solution": "divide(log(divide(${n1}, ${n0})), log(${n1}))"
+    },
+    {
+        "Problem": "if a and b are positive integers and ( ${n0} ^ a ) ^ b = ${n0} ^ ${n0} , what is the value of ${n0} ^ a * ${n0} ^ b ?",
+        "Solution": "multiply(power(${n0}, ${n0}), ${n0})"
+    },
+    {
+        "Problem": "a gardener is going to plant ${n0} red rosebushes and ${n0} white rosebushes . if the gardener is to select each of the bushes at random , one at a time , and plant them in a row , what is the probability that the ${n0} rosebushes in the middle of the row will be the red rosebushes ?",
+        "Solution": "divide(1, choose(add(${n0}, ${n0}), ${n0}))"
+    },
+    {
+        "Problem": "a certain university will select ${n0} of ${n1} candidates eligible to fill a position in the mathematics department and ${n2} of ${n3} candidates eligible to fill ${n2} identical positions in the computer science department . if none of the candidates is eligible for a position in both departments , how many different sets of ${n4} candidates are there to fill the ${n4} positions ?",
+        "Solution": "multiply(multiply(${n3}, ${n4}), ${n1})"
+    },
+    {
+        "Problem": "what will be the lcm of ${n0} , ${n1} , ${n2} and ${n3}",
+        "Solution": "multiply(multiply(multiply(multiply(multiply(2, 2), 2), 3), 3), 3)"
+    },
+    {
+        "Problem": "a number exceeds by ${n0} from its ${n1} / ${n2} part . then the number is ?",
+        "Solution": "divide(multiply(${n0}, ${n2}), subtract(${n2}, ${n1}))"
+    },
+    {
+        "Problem": "if ${n0} : x : : ${n1} : ${n2} , then x is equal to :",
+        "Solution": "divide(multiply(${n0}, ${n2}), ${n1})"
+    },
+    {
+        "Problem": "two trains of equal lengths take ${n0} sec and ${n1} sec respectively to cross a telegraph post . if the length of each train be ${n2} m , in what time will they cross other travelling in opposite direction ?",
+        "Solution": "divide(multiply(${n2}, 2), add(speed(${n2}, ${n1}), speed(${n2}, ${n0})))"
+    },
+    {
+        "Problem": "four equal circles are described about the four corners of a square so that each touches two of the others . if a side of the square is ${n0} cm , then the area enclosed between the circumferences of the circles is :",
+        "Solution": "subtract(square_area(${n0}), circle_area(divide(${n0}, 2)))"
+    },
+    {
+        "Problem": "in the coordinate plane , line a has a slope of - ${n0} and an x - intercept of ${n0} . line b has a slope of ${n1} and a y - intercept of - ${n1} . if the two lines intersect at the point ( a , b ) , what is the sum a + b ?",
+        "Solution": "divide(subtract(subtract(${n1}, ${n1}), ${n0}), ${n0})"
+    },
+    {
+        "Problem": "if the annual increase in the population of a town is ${n0} % and the present number of people is ${n1} , what will the population be in ${n2} years ?",
+        "Solution": "multiply(multiply(divide(add(${n0}, 100), 100), ${n1}), divide(add(${n0}, 100), 100))"
+    },
+    {
+        "Problem": "the sum of two consecutive integers is ${n0} . find the numbers .",
+        "Solution": "add(add(power(add(add(divide(subtract(subtract(${n0}, 10), 2), 4), 2), 2), 2), power(add(add(add(divide(subtract(subtract(${n0}, 10), 2), 4), 2), 2), 2), 2)), add(power(divide(subtract(subtract(${n0}, 10), 2), 4), 2), power(add(divide(subtract(subtract(${n0}, 10), 2), 4), 2), 2)))"
+    },
+    {
+        "Problem": "calculate the circumference of a circular field whose radius is ${n0} centimeters .",
+        "Solution": "circumface(${n0})"
+    },
+    {
+        "Problem": "a certain company \u2019 s profit in ${n0} was ${n1} percent greater than its profit in ${n2} , and its profit in ${n3} was ${n4} percent greater than its profit in ${n0} . the company \u2019 s profit in ${n3} was what percent greater than its profit in ${n2} ?",
+        "Solution": "multiply(subtract(multiply(add(divide(${n4}, 100), 1), add(1, divide(${n1}, 100))), 1), 100)"
+    },
+    {
+        "Problem": "a , b and c started a partnership business by investing rs . ${n0} , rs . ${n1} , rs . ${n2} respectively . at the end of the year , the profit were distributed among them . if c ' s share of profit is ${n3} , what is the total profit ?",
+        "Solution": "add(add(multiply(divide(${n0}, ${n2}), ${n3}), multiply(divide(${n1}, ${n2}), ${n3})), ${n3})"
+    },
+    {
+        "Problem": "two trains running in opposite directions cross a man standing on the platform in ${n0} seconds and ${n1} seconds respectively . if they cross each other in ${n2} seconds , what is the ratio of their speeds ?",
+        "Solution": "divide(subtract(${n0}, ${n2}), subtract(${n2}, ${n1}))"
+    },
+    {
+        "Problem": "sarah operated her lemonade stand monday through friday over a two week period and made a total profit of ${n0} dollars . on hot days she sold cups of lemonade for a price that was ${n1} percent higher than the regular days . each cup she sold had a total cost of ${n2} cents and sarah did not incur any other costs . if every day she sold exactly ${n3} cups and ${n4} of the days were hot , then what was the price of ${n5} cup on a hot day ?",
+        "Solution": "multiply(divide(add(multiply(multiply(${n3}, divide(${n2}, 100)), multiply(add(4, 1), 2)), ${n0}), add(multiply(subtract(multiply(add(4, 1), 2), ${n4}), ${n3}), multiply(multiply(divide(add(100, ${n1}), 100), ${n4}), ${n3}))), divide(add(100, ${n1}), 100))"
+    },
+    {
+        "Problem": "at sandi \u2019 s pet shop , ${n0} cups of bird seed are used every ${n1} days to feed ${n2} parakeets . how many cups of bird seed would be required to feed ${n3} parakeets for ${n4} days ?",
+        "Solution": "divide(multiply(multiply(${n3}, ${n0}), ${n4}), multiply(${n1}, ${n2}))"
+    },
+    {
+        "Problem": "there are ${n0} available positions and ${n1} candidates , one half of whom are democrats and another half are republicans . if it was decided that the positions would be filled at random , then what is the probability e that the both positions will be taken by members of just one party ?",
+        "Solution": "multiply(multiply(divide(subtract(divide(${n1}, 2), 1), subtract(${n1}, 1)), divide(divide(${n1}, 2), ${n1})), ${n0})"
+    },
+    {
+        "Problem": "a car travels from point a to point b . the average speed of the car is ${n0} km / hr and it travels the first half of the trip at a speed of ${n1} km / hr . what is the speed of the car in the second half of the trip ?",
+        "Solution": "divide(multiply(${n0}, divide(multiply(${n1}, ${n0}), multiply(subtract(${n1}, ${n0}), ${n0}))), divide(${n0}, 10))"
+    },
+    {
+        "Problem": "sonika deposited rs . ${n0} which amounted to rs . ${n1} after ${n2} years at simple interest . had the interest been ${n3} % more . she would get how much ?",
+        "Solution": "add(multiply(multiply(add(divide(${n3}, 100), divide(divide(subtract(${n1}, ${n0}), ${n2}), ${n0})), ${n0}), ${n2}), ${n0})"
+    },
+    {
+        "Problem": "a manufacturer sells a pair of glasses to a wholesale dealer at a profit of ${n0} % . the wholesaler sells the same to retailer at a profit of ${n1} % . the retailer in turn sells them to a customer for rs . ${n2} , there by earning a profit of ${n3} % . the cost price for the manufacturer is :",
+        "Solution": "divide(divide(divide(add(multiply(add(1, 2), divide(${n1}, 2)), divide(multiply(3, 3), 100)), divide(add(100, ${n3}), 100)), divide(add(${n1}, 100), 100)), divide(add(100, ${n0}), 100))"
+    },
+    {
+        "Problem": "how long will a boy take to run round a square field of side ${n0} meters , if he runs at the rate of ${n1} km / hr ?",
+        "Solution": "divide(multiply(${n0}, 4), multiply(${n1}, divide(1000, 3600)))"
+    },
+    {
+        "Problem": "the sum of the first ${n0} positive even integers is ${n1} . what is the sum of the even integers from ${n2} to ${n3} inclusive ?",
+        "Solution": "multiply(divide(add(${n3}, ${n2}), 2), add(divide(subtract(${n3}, ${n2}), 2), 1))"
+    },
+    {
+        "Problem": "the average runs scored by a batsman in ${n0} matches is ${n1} . in the next ${n0} matches the batsman scored an average of ${n2} runs . find his average in all the ${n3} matches ?",
+        "Solution": "divide(add(multiply(${n1}, ${n0}), multiply(${n2}, ${n0})), add(${n0}, ${n0}))"
+    },
+    {
+        "Problem": "there are ${n0} giraffes at a large zoo . the number of giraffes is ${n1} times the number of all the other animals combined . how many more giraffes are there than non giraffes animals at the zoo ?",
+        "Solution": "subtract(${n0}, divide(divide(${n0}, ${n1}), 10))"
+    },
+    {
+        "Problem": "bucket a is ${n0} / ${n1} full of sand , and bucket b , which has one - half the capacity of bucket a , is ${n2} / ${n3} full of sand . jana pours the contents of bucket b into bucket a . bucket a is now filled to what fraction of its capacity ?",
+        "Solution": "divide(add(${n1}, ${n2}), multiply(${n3}, 2))"
+    },
+    {
+        "Problem": "if n is an integer , f ( n ) = f ( n - ${n0} ) - n and f ( ${n1} ) = ${n2} . what is the value of f ( ${n3} ) ?",
+        "Solution": "subtract(subtract(${n2}, add(${n0}, ${n1})), ${n3})"
+    },
+    {
+        "Problem": "a salesman \u2019 s terms were changed from a flat commission of ${n0} % on all his sales to a fixed salary of rs . ${n1} plus 2.${n0} % commission on all sales exceeding rs . ${n3},${n4} . if his remuneration as per new scheme was rs . ${n5} more than that by the previous schema , his sales were worth ?",
+        "Solution": "divide(${n5}, divide(${n0}, 100))"
+    },
+    {
+        "Problem": "andy solves problems ${n0} to ${n1} inclusive in a math exercise . how many problems does he solve ?",
+        "Solution": "add(subtract(${n1}, ${n0}), 1)"
+    },
+    {
+        "Problem": "a fair ${n0} sided coin is flipped ${n1} times . what is the probability that tails will be the result at least twice , but not more than ${n1} times ?",
+        "Solution": "subtract(1, add(multiply(inverse(power(${n0}, ${n1})), ${n1}), add(inverse(power(${n0}, ${n1})), inverse(power(${n0}, ${n1})))))"
+    },
+    {
+        "Problem": "a ' and ' b ' are positive integers such that their lcm is ${n0} and their hcf is ${n1} . what is the addition of the maximum and minimum possible values of ' a + b ' ?",
+        "Solution": "subtract(add(${n0}, ${n0}), add(${n1}, ${n1}))"
+    },
+    {
+        "Problem": "${n0} / ${n1} of all married couples have more than one child . ${n2} / ${n1} of all married couples have more than ${n0} children . what fraction of all married couples have ${n2} or ${n0} children ?",
+        "Solution": "subtract(divide(${n0}, ${n1}), divide(${n2}, ${n1}))"
+    },
+    {
+        "Problem": "one pump drains one - half of a pond in ${n0} hours , and then a second pump starts draining the pond . the two pumps working together finish emptying the pond in one - half hour . how long would it take the second pump to drain the pond if it had to do the job alone ?",
+        "Solution": "divide(1, subtract(1, divide(1, multiply(${n0}, 2))))"
+    },
+    {
+        "Problem": "if ${n0} ^ ${n0} n + ${n0} ^ ${n0} n + ${n0} ^ ${n0} n + ${n0} ^ ${n0} n = ${n1} ^ ${n2} , then n =",
+        "Solution": "divide(subtract(multiply(${n2}, ${n0}), ${n0}), ${n0})"
+    },
+    {
+        "Problem": "a fair price shopkeeper takes ${n0} % profit on his goods . he lost ${n1} % goods during theft . his loss percent is :",
+        "Solution": "subtract(100, subtract(add(100, ${n0}), divide(multiply(add(100, ${n0}), ${n1}), 100)))"
+    },
+    {
+        "Problem": "a and b go around a circular track of length ${n0} m on a cycle at speeds of ${n1} kmph and ${n2} kmph . after how much time will they meet for the first time at the starting point ?",
+        "Solution": "divide(${n0}, subtract(multiply(${n2}, const_0_2778), multiply(${n1}, const_0_2778)))"
+    },
+    {
+        "Problem": "in cliff \u2019 s impressive rock collection , there are half as many igneous rocks as sedimentary rocks . of the igneous rocks , ${n0} / ${n1} are shiny and the rest are matte , while ${n2} / ${n3} of the sedimentary rocks are shiny . if there are ${n4} shiny igneous rocks , how many total rocks does cliff have ?",
+        "Solution": "divide(multiply(divide(multiply(multiply(${n0}, ${n1}), ${n4}), ${n0}), ${n1}), ${n0})"
+    },
+    {
+        "Problem": "two assembly line inspectors , smithy and glen , inspect widgets as they come off the assembly line . if smithy inspects every fifth widget , starting with the fifth , and glen inspects every third , starting with the third , how many of the ${n0} widgets produced in the first hour of operation are not inspected by either inspector ?",
+        "Solution": "subtract(${n0}, subtract(add(divide(${n0}, divide(10, 2)), divide(${n0}, 3)), divide(${n0}, multiply(divide(10, 2), 3))))"
+    },
+    {
+        "Problem": "what is the sum of the numbers between ${n0} and ${n1} , inclusive ?",
+        "Solution": "divide(multiply(${n0}, ${n1}), 4)"
+    },
+    {
+        "Problem": "the speed of a car is ${n0} km in the first hour and ${n1} km in the second hour . what is the average speed of the car ?",
+        "Solution": "divide(add(${n0}, ${n1}), 2)"
+    },
+    {
+        "Problem": "in a class of ${n0} children , ${n1} % children can speak only english , ${n2} % hindi and english both and the rest of the children can speak only hindi . how many children can speak hindi ?",
+        "Solution": "add(subtract(${n0}, ${n1}), divide(multiply(${n2}, ${n0}), 100))"
+    },
+    {
+        "Problem": "${n0} % of a number is more than ${n1} % of ${n2} by ${n3} . find the number ?",
+        "Solution": "divide(multiply(add(divide(multiply(${n2}, ${n1}), 100), ${n3}), 100), ${n0})"
+    },
+    {
+        "Problem": "george ' s car calls for ${n0} ounces of oil for each cylinder used . his car ' s engine has ${n1} cylinders . if ${n2} ounces of oil has already been put into the engine used , then how many additional ounces of oil are needed ?",
+        "Solution": "subtract(multiply(${n0}, ${n1}), ${n2})"
+    },
+    {
+        "Problem": "a car traveled ${n0} % of the way from town x to town y at an average speed of ${n0} mph . the car traveled at an average speed of v mph for the remaining part of the trip . the average speed for the entire trip was ${n1} mph . what is v in mph ?",
+        "Solution": "divide(subtract(100, ${n0}), divide(${n0}, ${n0}))"
+    },
+    {
+        "Problem": "if the compound interest on a certain sum of money for ${n0} years at ${n1} % per annum be rs . ${n2} , what would be the simple interest ?",
+        "Solution": "divide(multiply(multiply(multiply(multiply(3.0, 100), ${n1}), ${n1}), ${n0}), 100)"
+    },
+    {
+        "Problem": "hammers and wrenches are manufactured at a uniform weight per hammer and a uniform weight per wrench . if the total weight of two hammers and two wrenches is one - third that of ${n0} hammers and ${n1} wrenches , then the total weight of one wrench is how many times that of one hammer ?",
+        "Solution": "divide(subtract(${n0}, multiply(3, 2)), subtract(multiply(3, 2), ${n1}))"
+    },
+    {
+        "Problem": "tea worth rs . ${n0} per kg are mixed with a third variety in the ratio ${n1} : ${n1} : ${n2} . if the mixture is worth rs . ${n3} per kg , the price of the third variety per kg will be",
+        "Solution": "divide(subtract(multiply(${n3}, add(add(${n1}, ${n1}), ${n2})), add(${n0}, ${n0})), ${n2})"
+    },
+    {
+        "Problem": "in an examination , ${n0} % of total students failed in hindi , ${n1} % failed in english and ${n2} % in both . the percentage of these who passed in both the subjects is :",
+        "Solution": "subtract(100, subtract(add(${n0}, ${n1}), ${n2}))"
+    },
+    {
+        "Problem": "the total circumference of two circles is ${n0} . if the first circle has a circumference that is exactly twice the circumference of the second circle , then what is the approximate sum of their two radii ?",
+        "Solution": "divide(add(divide(divide(${n0}, 3), 3), divide(multiply(divide(${n0}, 3), 2), 3)), 2)"
+    },
+    {
+        "Problem": "a certain pair of used shoes can be repaired for $ ${n0} and will last for ${n1} year . a pair of the same kind of shoes can be purchased new for $ ${n2} and will last for ${n3} years . the average cost per year of the new shoes is what percent greater than the cost of repairing the used shoes ?",
+        "Solution": "multiply(100, divide(subtract(${n2}, multiply(${n0}, ${n3})), multiply(${n0}, ${n3})))"
+    },
+    {
+        "Problem": "a cistern can be filled by a tap in ${n0} hours while it can be emptied by another tap in ${n1} hours . if both the taps are opened simultaneously , then after how much time will the cistern get filled ?",
+        "Solution": "divide(1, subtract(divide(1, ${n0}), divide(1, ${n1})))"
+    },
+    {
+        "Problem": "a and b invests rs . ${n0} and rs . ${n1} in a business . after ${n2} months , a withdraws half of his capital and ${n3} months later , b withdraws one - third of his capital . in what ratio should they share the profits at the end of the year ?",
+        "Solution": "divide(add(multiply(${n0}, ${n2}), multiply(divide(${n1}, 3), multiply(${n3}, ${n2}))), add(multiply(${n1}, multiply(${n3}, 3)), multiply(subtract(${n1}, divide(${n1}, 3)), multiply(${n3}, 3))))"
+    },
+    {
+        "Problem": "a runs twice as fast as b and gives b a start of ${n0} m . how long should the racecourse be so that a and b might reach in the same time ?",
+        "Solution": "multiply(${n0}, 2)"
+    },
+    {
+        "Problem": "in a certain town , the ratio of ny yankees fans to ny mets fans is ${n0} : ${n1} , and the ratio of ny mets fans to boston red sox fans is ${n2} : ${n3} . if there are ${n4} baseball fans in the town , each of whom is a fan of exactly one of those three teams , how many ny mets fans are there in this town ?",
+        "Solution": "multiply(divide(${n4}, add(add(multiply(${n0}, ${n1}), ${n2}), ${n3})), ${n2})"
+    },
+    {
+        "Problem": "what is the ${n0} th digit to the right of the decimal point in the decimal form of ${n1} / ${n2} ?",
+        "Solution": "divide(${n1}, ${n2})"
+    },
+    {
+        "Problem": "what is the area of square field whose side of length ${n0} m ?",
+        "Solution": "square_area(${n0})"
+    },
+    {
+        "Problem": "a can complete a certain job in ${n0} days . b is ${n1} % more efficient than a . in how many days can b complete the same job ?",
+        "Solution": "divide(multiply(${n0}, 60.0), 100)"
+    },
+    {
+        "Problem": "a metallic sheet is of rectangular shape with dimensions ${n0} m x ${n1} m . from each of its corners , a square is cut off so as to make an open box . if the length of the square is ${n2} m , the volume of the box ( in m cube ) is :",
+        "Solution": "volume_rectangular_prism(subtract(${n0}, multiply(${n2}, 2)), subtract(${n1}, multiply(${n2}, 2)), ${n2})"
+    },
+    {
+        "Problem": "in what time a sum of money double itself at ${n0} % per annum simple interest ?",
+        "Solution": "divide(multiply(100, 100), multiply(${n0}, 100))"
+    },
+    {
+        "Problem": "a , b , c can complete a piece of work in ${n0} , ${n1},${n2} days . working together , they complete the same work in how many days ?",
+        "Solution": "divide(1, add(add(divide(1, ${n0}), divide(1, add(4, 2))), divide(1, multiply(2, add(4, 2)))))"
+    },
+    {
+        "Problem": "if the horse can run ${n0} miles / hour , how many days would it take for a horse to run from new york city to washington . d . c . ? ( ${n1} miles from nyc to d . c . )",
+        "Solution": "divide(divide(${n1}, ${n0}), divide(${n1}, ${n0}))"
+    },
+    {
+        "Problem": "solve below question ${n0} x + ${n1} = - ${n2}",
+        "Solution": "divide(negate(add(${n2}, ${n1})), ${n0})"
+    },
+    {
+        "Problem": "solution for ${n0} + . ${n1} + . ${n2}",
+        "Solution": "add(add(${n0}, divide(4, 1000)), divide(${n2}, 1000))"
+    },
+    {
+        "Problem": "in a throw of dice what is the probability of ge \u00e6 \u00ab ng number greater than ${n0}",
+        "Solution": "divide(subtract(6, ${n0}), 6)"
+    },
+    {
+        "Problem": "a reduction of ${n0} % in the price of oil enables a house wife to obtain ${n1} kgs more for rs . ${n2} , what is the reduced price for kg ?",
+        "Solution": "divide(divide(multiply(${n2}, ${n0}), 100), ${n1})"
+    },
+    {
+        "Problem": "how many paying stones , each measuring ${n0} ${n1} / ${n0} m * ${n0} m are required to pave a rectangular court yard ${n2} m long and ${n3} ${n1} / ${n0} m board ?",
+        "Solution": "divide(multiply(${n2}, add(${n3}, divide(${n1}, ${n0}))), multiply(add(${n0}, divide(${n1}, ${n0})), ${n0}))"
+    },
+    {
+        "Problem": "${n0} liters of a mixture is created by mixing liquid p and liquid q in the ratio ${n1} : ${n2} . how many liters of liquid q must be added to make the ratio ${n3} : ${n1} ?",
+        "Solution": "subtract(divide(multiply(divide(multiply(add(${n3}, ${n1}), divide(multiply(${n0}, ${n1}), add(${n1}, ${n2}))), ${n3}), ${n1}), add(${n3}, ${n1})), divide(multiply(${n0}, ${n2}), add(${n1}, ${n2})))"
+    },
+    {
+        "Problem": "a sum amounts to rs . ${n0} in ${n1} years at the rate of ${n2} % p . a . if interest was compounded yearly then what was the principal ?",
+        "Solution": "divide(${n0}, power(add(divide(${n2}, 100), 1), ${n1}))"
+    },
+    {
+        "Problem": "express a speed of ${n0} kmph in meters per second ?",
+        "Solution": "multiply(const_0_2778, ${n0})"
+    },
+    {
+        "Problem": "in a fuel station the service costs $ ${n0} per car , every liter of fuel costs ${n1} $ . assuming that a company owns ${n2} cars and that every fuel tank contains ${n3} liters and they are all empty , how much money total will it cost to fuel all cars ?",
+        "Solution": "multiply(multiply(${n1}, ${n3}), ${n2})"
+    },
+    {
+        "Problem": "a group of men decided to do a work in ${n0} days , but ${n1} of them became absent . if the rest of the group did the work in ${n2} days , find the original number of men ?",
+        "Solution": "divide(multiply(${n1}, ${n2}), subtract(${n2}, ${n0}))"
+    },
+    {
+        "Problem": "a sells a cricket bat to b at a profit of ${n0} % . b sells it to c at a profit of ${n1} % . if c pays $ ${n2} for it , the cost price of the cricket bat for a is :",
+        "Solution": "divide(${n2}, multiply(add(1, divide(${n0}, 100)), add(1, divide(${n1}, 100))))"
+    },
+    {
+        "Problem": "a rectangular plot measuring ${n0} metres by ${n1} metres is to be enclosed by wire fencing . if the poles of the fence are kept ${n2} metres apart , how many poles will be needed ?",
+        "Solution": "divide(rectangle_perimeter(${n0}, ${n1}), ${n2})"
+    },
+    {
+        "Problem": "in town x , ${n0} percent of the population are employed , and ${n1} percent of the population are employed males . what percent of the employed people in town x are females ?",
+        "Solution": "multiply(divide(subtract(${n0}, ${n1}), ${n0}), 100)"
+    },
+    {
+        "Problem": "the hiker walking at a constant rate of ${n0} miles per hour is passed by a motor - cyclist traveling in the same direction along the same path at ${n1} miles per hour . the motor - cyclist stops to wait for the hiker ${n2} minutes after passing her , while the hiker continues to walk at her constant rate , how many minutes must the motor - cyclist wait until the hiker catches up ?",
+        "Solution": "multiply(${n1}, const_1_6)"
+    },
+    {
+        "Problem": "the speed at which a man can row a boat in still water is ${n0} kmph . if he rows downstream , where the speed of current is ${n1} kmph , what time will he take to cover ${n2} metres ?",
+        "Solution": "divide(${n2}, multiply(add(${n0}, ${n1}), const_0_2778))"
+    },
+    {
+        "Problem": "a train consists of ${n0} boggies , each boggy ${n1} metres long . the train crosses a telegraph post in ${n2} seconds . due to some problem , one boggies were detached . the train now crosses a telegraph post in",
+        "Solution": "divide(subtract(multiply(${n0}, ${n1}), ${n1}), divide(multiply(${n0}, ${n1}), ${n2}))"
+    },
+    {
+        "Problem": "a lent rs . ${n0} to b for ${n1} years and rs . ${n2} to c for ${n3} years on simple interest at the same rate of interest and received rs . ${n4} in all from both of them as interest . the rate of interest per annum is ?",
+        "Solution": "multiply(divide(${n4}, add(multiply(${n0}, ${n1}), multiply(${n2}, ${n3}))), 100)"
+    },
+    {
+        "Problem": "tickets numbered from ${n0} to ${n1} are mixed and then a ticket is selected randomly . what is the probability that the selected ticket bears a number which is a multiple of ${n2} ?",
+        "Solution": "divide(divide(${n1}, ${n2}), ${n1})"
+    },
+    {
+        "Problem": "in a certain boys camp , ${n0} % of the total boys are from school a and ${n1} % of those study science . if there are ${n2} boys in the camp that are from school a but do not study science then what is the total number of boys in the camp ?",
+        "Solution": "divide(${n2}, multiply(divide(subtract(100, ${n1}), 100), divide(${n0}, 100)))"
+    },
+    {
+        "Problem": "the number ${n0} can be written as sum of the squares of ${n1} different positive integers . what is the sum of these ${n1} different integers ?",
+        "Solution": "multiply(2, sqrt(divide(${n0}, 2)))"
+    },
+    {
+        "Problem": "a certain list consists of ${n0} different numbers . if n is in the list and n is ${n1} times the average ( arithmetic mean ) of the other ${n2} numbers in the list , then n is what fraction of the sum of the ${n0} numbers in the list ?",
+        "Solution": "divide(multiply(1, 1), subtract(subtract(multiply(divide(add(divide(${n2}, ${n1}), ${n0}), ${n1}), 2), ${n1}), 3))"
+    },
+    {
+        "Problem": "in a boat there are ${n0} men whose average weight is increased by ${n1} kg when ${n1} man of ${n2} kg is replaced by a new man . what is weight of new comer ?",
+        "Solution": "add(${n2}, ${n0})"
+    },
+    {
+        "Problem": "the ratio of a and b is ${n0} : ${n1} . after ${n2} years their ratio is ${n1} : ${n2} . what is the age of b ?",
+        "Solution": "subtract(divide(multiply(multiply(${n0}, ${n2}), ${n1}), ${n2}), multiply(${n1}, ${n1}))"
+    },
+    {
+        "Problem": "a train leaves delhi at ${n0} a . m . at a speed of ${n1} kmph . another train leaves at ${n2} p . m . at a speed of ${n3} kmph on the same day and in the same direction . how far from delhi , will the two trains meet ?",
+        "Solution": "multiply(divide(multiply(${n1}, add(3, ${n2})), subtract(${n3}, ${n1})), ${n3})"
+    },
+    {
+        "Problem": "if the probability of rain on any given day in chicago during the summer is ${n0} % , independent of what happens on any other day , what is the probability of having exactly ${n1} rainy days from july ${n2} through july ${n3} , inclusive ?",
+        "Solution": "multiply(${n2}, power(divide(1, 2), ${n2}))"
+    },
+    {
+        "Problem": "eight cubes , each with a volume of ${n0} cm ^ ${n1} , are joined to form one large cube . what is the surface area of the large cube ?",
+        "Solution": "surface_cube(cube_edge_by_volume(multiply(multiply(2, 4), ${n0})))"
+    },
+    {
+        "Problem": "the length of a rectangle is twice its breadth . if its lengthis decreased by ${n0} cm & breadth is increased by ${n0} cm , the area of the rectangle is increased by ${n1} sq . cm . what is the length of the rectangle ?",
+        "Solution": "multiply(2, divide(add(${n1}, multiply(${n0}, ${n0})), subtract(multiply(2, ${n0}), ${n0})))"
+    },
+    {
+        "Problem": "every year an amount increases by ${n0} / ${n1} th of itself . how much will it be after two years if its present value is rs . ${n2} ?",
+        "Solution": "add(add(${n2}, multiply(divide(${n0}, ${n1}), ${n2})), multiply(divide(${n0}, ${n1}), add(${n2}, multiply(divide(${n0}, ${n1}), ${n2}))))"
+    },
+    {
+        "Problem": "set s contains exactly ${n0} numbers and has an average ( arithmetic mean ) of ${n1} . if one of the numbers in set s is increased by ${n2} , while all other numbers remain the same , what is the new average of set s ?",
+        "Solution": "divide(add(multiply(${n0}, ${n1}), ${n2}), ${n0})"
+    },
+    {
+        "Problem": "during a sale of ${n0} % on everything in a store , a kid is successful in convincing the store manager to give him ${n0} candies for the discounted price of ${n1} candies . the store still makes a profit of ${n2} % on this sale . what is the mark up percentage on each candy ?",
+        "Solution": "multiply(subtract(divide(add(divide(${n2}, 100), 1), multiply(subtract(1, divide(${n0}, 100)), divide(subtract(${n0}, ${n1}), ${n0}))), 1), 100)"
+    },
+    {
+        "Problem": "how many numbers are divisible by ${n0} between ${n1} and ${n2} .",
+        "Solution": "divide(${n2}, multiply(${n0}, ${n1}))"
+    },
+    {
+        "Problem": "if a person walks at ${n0} km / hr instead of ${n1} km / hr , he would have walked ${n2} km more . what is the actual distance travelled by him ?",
+        "Solution": "multiply(${n1}, divide(${n2}, subtract(${n0}, ${n1})))"
+    },
+    {
+        "Problem": "arjun started a business with rs . ${n0},${n1} and is joined afterwards by anoop with rs . ${n2} , ${n1} . after how many months did anoop join if the profits at the end of the year are divided equally ?",
+        "Solution": "divide(subtract(multiply(multiply(multiply(4, 100), 100), 12), multiply(multiply(multiply(2, 100), 100), 12)), multiply(multiply(${n2}, 100), 10))"
+    },
+    {
+        "Problem": "${n0} \u00d7 ${n1} = ?",
+        "Solution": "multiply(divide(${n0}, ${n1}), 100)"
+    },
+    {
+        "Problem": "${n0} x ${n0} = ?",
+        "Solution": "multiply(divide(${n0}, ${n0}), 100)"
+    },
+    {
+        "Problem": "if ${n0} < x < ${n1} and y = x + ${n2} , what is the greatest possible integer value of x + y ?",
+        "Solution": "add(add(${n2}, 10), 10)"
+    },
+    {
+        "Problem": "pipe p can fill a tank in ${n0} hours , pipe q in ${n1} hours and pipe r in ${n2} hours . if all the pipes are open , in how many hours will the tank be filled ?",
+        "Solution": "inverse(add(divide(1, ${n2}), add(divide(1, ${n0}), divide(1, ${n1}))))"
+    },
+    {
+        "Problem": "a worker ' s take - home pay last year was the same each month , and she saved the same fraction of her take - home pay each month . the total amount of money that she had saved at the end of the year was ${n0} times the amount of that portion of her monthly take - home pay that she did not save . if all the money that she saved last year was from her take - home pay , what fraction of her take - home pay did she save each month ?",
+        "Solution": "inverse(add(divide(12, ${n0}), 1))"
+    },
+    {
+        "Problem": "a trader mixes ${n0} kg of tea at ${n1} per kg with ${n2} kg of tea at cost price of ${n2} per kg . in order to earn a profit of ${n3} % , what should be the sale price of the mixed tea ?",
+        "Solution": "add(divide(multiply(divide(add(multiply(${n0}, ${n1}), multiply(${n2}, ${n2})), add(${n0}, ${n2})), ${n3}), 100), divide(add(multiply(${n0}, ${n1}), multiply(${n2}, ${n2})), add(${n0}, ${n2})))"
+    },
+    {
+        "Problem": "if the sum of two numbers is ${n0} and the h . c . f and l . c . m of these numbers are ${n1} and ${n2} respectively , then the sum of the reciprocal of the numbers is equal to :",
+        "Solution": "divide(add(${n1}, ${n2}), multiply(${n1}, ${n2}))"
+    },
+    {
+        "Problem": "a person bought ${n0} glass bowls at a rate of rs . ${n1} per bowl . he sold ${n2} of them at rs . ${n3} and the remaining broke . what is the percentage gain for a ?",
+        "Solution": "multiply(divide(subtract(multiply(${n2}, ${n3}), multiply(${n0}, ${n1})), multiply(${n0}, ${n1})), 100)"
+    },
+    {
+        "Problem": "a cube of edge ${n0} cm is immersed completely in a rectangular vessel containing water . if the dimensions of the base of vessel are ${n1} cm * ${n2} cm , find the rise in water level ?",
+        "Solution": "divide(volume_cube(${n0}), multiply(${n1}, ${n2}))"
+    },
+    {
+        "Problem": "two cars are driving toward each other . the first car is traveling at a speed of ${n0} km / h , which is ${n1} % slower than the second car ' s speed . if the distance between the cars is ${n2} km , how many hours will it take until the two cars meet ?",
+        "Solution": "divide(add(multiply(${n0}, 4), multiply(divide(multiply(4, ${n0}), add(1, 4)), 4)), add(${n0}, divide(multiply(4, ${n0}), add(1, 4))))"
+    },
+    {
+        "Problem": "a train ${n0} m long running at ${n1} kmph crosses a platform in ${n2} sec . what is the length of the platform ?",
+        "Solution": "subtract(multiply(${n2}, multiply(${n1}, const_0_2778)), ${n0})"
+    },
+    {
+        "Problem": "by travelling at ${n0} kmph , a person reaches his destination on time . he covered two - third the total distance in one - third of the total time . what speed should he maintain for the remaining distance to reach his destination on time ?",
+        "Solution": "divide(subtract(multiply(${n0}, 3), divide(multiply(multiply(${n0}, 3), 2), 3)), subtract(3, 1))"
+    },
+    {
+        "Problem": "the cost of registration at a professional association meeting was $ ${n0} per person ; a lunch for registrants only was available for an additional $ ${n1} per person . if the number of registrants who paid for lunch was ${n0} more than the number who did not , and if receipts for registration and lunch totaled $ ${n2},${n3} , how many people paid just for registration at the meeting ?",
+        "Solution": "multiply(1, 1)"
+    },
+    {
+        "Problem": "the unit digit in the product ( ${n0} * ${n1} * ${n2} * ${n3} ) is :",
+        "Solution": "subtract(multiply(multiply(multiply(${n0}, ${n1}), ${n2}), ${n3}), subtract(multiply(multiply(multiply(${n0}, ${n1}), ${n2}), ${n3}), add(4, 4)))"
+    },
+    {
+        "Problem": "how many times will the digit ${n0} be written when listing the integers from ${n1} to ${n2} ?",
+        "Solution": "multiply(multiply(multiply(${n1}, 10), 10), 3)"
+    },
+    {
+        "Problem": "a train passes a station platform in ${n0} sec and a man standing on the platform in ${n1} sec . if the speed of the train is ${n2} km / hr . what is the length of the platform ?",
+        "Solution": "multiply(${n1}, multiply(${n2}, const_0_2778))"
+    },
+    {
+        "Problem": "machine a and machine b are each used to manufacture ${n0} sprockets . it takes machine a ${n1} hours longer to produce ${n0} sprockets than machine b . machine b produces ${n1} percent more sprockets per hour than machine a . how many sprockets per hour does machine a produces ?",
+        "Solution": "divide(${n0}, divide(multiply(multiply(${n1}, ${n0}), divide(add(100, ${n1}), 100)), subtract(multiply(${n0}, divide(add(100, ${n1}), 100)), ${n0})))"
+    },
+    {
+        "Problem": "if the ratio of the sum of the first ${n0} terms of a g . p . to the sum of the first ${n1} terms of the g . p . is ${n2} , what is the common ratio of the g . p ?",
+        "Solution": "power(subtract(${n2}, 1), divide(1, ${n1}))"
+    },
+    {
+        "Problem": "on dividing ${n0} by a number , the quotient is ${n1} and the remainder is ${n2} . find the divisor ?",
+        "Solution": "floor(divide(${n0}, ${n1}))"
+    },
+    {
+        "Problem": "a ${n0} gallon solution of salt and water is ${n1} % salt . how many gallons of water must be added to the solution in order to decrease the salt to ${n2} % of the volume ?",
+        "Solution": "divide(multiply(${n0}, subtract(${n1}, ${n2})), ${n2})"
+    },
+    {
+        "Problem": "the radius of a cylindrical vessel is ${n0} cm and height is ${n1} cm . find the whole surface of the cylinder ?",
+        "Solution": "surface_cylinder(${n0}, ${n1})"
+    },
+    {
+        "Problem": "the simple interest on a sum of money will be rs . ${n0} after ${n1} years . if the principal is trebled after ${n2} years what will be the total interest at the end of the tenth year ?",
+        "Solution": "add(multiply(multiply(divide(${n0}, ${n1}), ${n2}), 3), multiply(divide(${n0}, ${n1}), ${n2}))"
+    },
+    {
+        "Problem": "a rectangular floor that measures ${n0} meters by ${n1} meters is to be covered with carpet squares that each measure ${n2} meters by ${n2} meters . if the carpet squares cost $ ${n0} apiece , what is the total cost for the number of carpet squares needed to cover the floor ?",
+        "Solution": "multiply(${n0}, ${n0})"
+    },
+    {
+        "Problem": "what least number must be subtracted from ${n0} so that remaining no . is divisible by ${n1}",
+        "Solution": "subtract(${n0}, multiply(floor(divide(${n0}, ${n1})), ${n1}))"
+    },
+    {
+        "Problem": "jim is able to sell a hand - carved statue for $ ${n0} which was a ${n1} % profit over his cost . how much did the statue originally cost him ?",
+        "Solution": "divide(${n0}, add(divide(${n1}, 100), 1))"
+    },
+    {
+        "Problem": "the minute hand of a clock overtakes the hour hand at intervals of ${n0} minutes of correct time . how much does the clock gain or lose in ${n1} hours ?",
+        "Solution": "multiply(subtract(divide(multiply(multiply(2, 3), 60), divide(subtract(multiply(multiply(2, 3), 60), divide(multiply(multiply(2, 3), 60), multiply(3, 4))), 60)), ${n0}), 60)"
+    },
+    {
+        "Problem": "students at a school were on average ${n0} cm tall . the average female height was ${n1} cm , and the average male height was ${n2} cms . what was the ratio f of men to women ?",
+        "Solution": "divide(subtract(${n0}, ${n1}), subtract(${n2}, ${n0}))"
+    },
+    {
+        "Problem": "average monthly income of a family of ${n0} earning members was rs . ${n1} . one of the earning members died and therefore , the average income came down to rs ${n2} . the income of the deceased was ?",
+        "Solution": "subtract(multiply(${n1}, ${n0}), multiply(${n2}, subtract(${n0}, 1)))"
+    },
+    {
+        "Problem": "a started a business with an investment of rs . ${n0} and after ${n1} months b joined him investing rs . ${n2} . if the profit at the end of a year is rs . ${n3} , then the share of b is ?",
+        "Solution": "subtract(${n3}, multiply(60, 100))"
+    },
+    {
+        "Problem": "a tank can supply water to a village for ${n0} days . if a leak at the bottom of the tank drains out ${n1} liters per day , the supply lasts for ${n2} days only . for how many days will the supply last if the leak drains out ${n0} liters per day ?",
+        "Solution": "divide(multiply(divide(multiply(${n1}, ${n2}), subtract(${n0}, ${n2})), ${n0}), add(${n0}, divide(multiply(${n1}, ${n2}), subtract(${n0}, ${n2}))))"
+    },
+    {
+        "Problem": "${n0} of the scientists that attended a certain workshop were wolf prize laureates , and ${n1} of these ${n0} were also nobel prize laureates . of the scientists that attended that workshop and had not received the wolf prize , the number of scientists that had received the nobel prize was ${n2} greater than the number of scientists that had not received the nobel prize . if ${n3} of the scientists attended that workshop , how many of them were nobel prize laureates ?",
+        "Solution": "add(add(${n2}, divide(subtract(subtract(${n3}, ${n0}), ${n2}), 2)), ${n1})"
+    },
+    {
+        "Problem": "a committee is reviewing a total of ${n0} x black - and - white films and ${n1} y color films for a festival . if the committee selects y / x % of the black - and - white films and all of the color films , what fraction x of the selected films are in color ?",
+        "Solution": "divide(${n1}, add(divide(${n0}, 100), ${n1}))"
+    },
+    {
+        "Problem": "if the average ( arithmetic mean ) of x + ${n0} , x + ${n1} , and x + ${n2} is ${n3} , then x =",
+        "Solution": "subtract(multiply(${n1}, 2), multiply(${n0}, 2))"
+    },
+    {
+        "Problem": "for how many integers pair ( x , y ) satisfies the result ( ${n0} / x ) + ( ( ${n0} / y ) = ${n0} / ${n1}",
+        "Solution": "add(add(add(${n1}, ${n0}), ${n0}), ${n0})"
+    },
+    {
+        "Problem": "of the female students at barkely university , ${n0} / ${n1} are on the honor roll . of the male students , ${n2} / ${n1} are on the honor roll . if ${n1} / ${n3} of the students are female , what fraction of all the students are on the honor roll ?",
+        "Solution": "divide(add(multiply(multiply(${n0}, ${n2}), ${n2}), ${n2}), multiply(${n2}, multiply(${n1}, ${n0})))"
+    }
+]
